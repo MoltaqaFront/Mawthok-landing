@@ -1,0 +1,74 @@
+// ========== start contact page ============
+
+.static .contact .all_content .box_contact,
+.static .static_page_content_wrapper {
+  margin-top: 100px !important;
+}
+.contact {
+  .all_content {
+    margin: 50px 0;
+
+    .box_contact {
+      padding: 40px 60px;
+      background: #fff;
+      box-shadow: 0px 13px 66px #86848429;
+    }
+
+    .all_info {
+      padding: 0;
+      box-shadow: none;
+
+      h3 {
+        margin-bottom: 27px;
+      }
+
+      form {
+        .form-group {
+          margin-bottom: 20px;
+        }
+        input {
+        }
+
+        input {
+          width: 100%;
+          padding-inline-start: 20px;
+          height: 45px;
+          background: #4a1e036b;
+          border-radius: 5px;
+          border: none !important;
+          outline: none;
+        }
+
+        textarea {
+          padding: 10px 16px;
+          height: 79px;
+          background: #4a1e036b ;
+          border: none !important;
+          outline: none;
+          resize: none;
+          width: 100%;
+          padding-inline-start: 20px;
+        }
+
+        button.send_btn {
+          height: 47px;
+          width: 150px;
+          transition: 0.7s;
+          text-transform: capitalize;
+          border: 1px solid transparent;
+          outline: 0;
+          cursor: pointer;
+          font-size: 16px;
+          box-shadow: 0 0 14px #202b4b;
+          border-radius: 50px;
+          text-align: center;
+          color: #fff;
+          background: #4a1e03;
+          margin: auto;
+          // background: #;
+        }
+      }
+    }
+  }
+}
+// ========== contact contact page ==========

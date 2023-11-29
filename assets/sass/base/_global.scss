@@ -1,0 +1,17 @@
+* {
+  font-family: $regular_font;
+  @include boxSizing;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--theme_bg_clr);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--main_theme_clr);
+    border: 2px solid var(--theme_bg_clr);
+    border-radius: 15px;
+  }
+}

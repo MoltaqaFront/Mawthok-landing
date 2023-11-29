@@ -1,0 +1,78 @@
+// Start:: Root Element
+:root {
+  // =========== Start:: Theme Colors ===========
+  --theme_main_bg_clr: #FBF9F4;
+  --theme_second_bg_clr: #F7F5EF;
+  --theme_third_bg_clr: #FBF9F4;
+  --form_content_bg_clr: #fff;
+  --footer_bg_clr: #1C1D20;
+  --small_footer_bg_clr: #e6e4e0;
+  --theme_text_clr: #313131;
+  --theme_secondary_text_clr: #A8B1C1;
+  --main_theme_clr:  #4a1e03;
+  --secondary_theme_clr:  #b4954f;
+  --dark_secondary_theme_clr:  #80C2FF;
+  --blurred_clr: rgba(255, 255, 255, 0.6);
+  --map_overlay_clr: rgba(225, 225, 225, 0.6);
+  --simple_shadow_clr: rgba(225, 225, 225, 0.3);
+  --mid_shadow_clr: rgba(225, 225, 225, 0.6);
+  --border_clr: #f3f3f3;
+  --skeleton_loader_card_clr: #ebebeb;
+  // =========== End:: Theme Colors ===========
+
+  // =========== Start:: Base Colors ===========
+  --white_clr: #fff;
+  --lighter_gray_clr: #E9EAEB;
+  --light_gray_clr: #A6A6A6;
+  --mid_gray_clr: #3f3f3f;
+  --dark_gray_clr: #212121;
+  --mid_blue_clr: #103580;
+  --mid_green_clr: #34BF6C;
+  --deep_red-clr: #810000;
+  --mid_red_clr: #FA4248;
+  --light_red_clr: #FF2159;
+  --soft_red_clr: #FFD8E2;
+  --gold_clr: #FFDD00;
+  --soft_yellow_clr: #FFF8CC;
+  // =========== End:: Base Colors ===========
+
+  // =========== Start:: Brands Colors ===========
+  --facebook_clr: #4267B2;
+  --twitter_clr: #1DA1F2;
+  --whatsApp_clr: #25D366;
+  --telegram_clr: #0088cc;
+  --linkedin_clr: #2867b2;
+  --youtube_clr: #ff0000;
+  // =========== End:: Brands Colors ===========
+
+  // Start:: Dark Theme Colors
+  .dark_theme {
+      // =========== Start:: Theme Colors ===========
+      --theme_main_bg_clr: #232A3B;
+      --theme_second_bg_clr: #293145;
+      --theme_third_bg_clr: #232A3B;
+      --form_content_bg_clr: rgba(41, 49, 69, 0.6);
+      --footer_bg_clr: #293145;
+      --small_footer_bg_clr: #12192b;
+      --theme_text_clr: #fff;
+      --theme_secondary_text_clr: #fff;
+      --secondary_theme_clr:  #151c2e;
+      --theme_inputs_clr: #0d132266;
+      --blurred_clr: rgba(41, 49, 69, 0.6);
+      --map_overlay_clr: rgba(13, 11, 41, 0.6);
+      --simple_shadow_clr: rgba(9, 20, 37, 0.4);
+      --mid_shadow_clr: rgba(9, 20, 37, 0.6);
+      --border_clr: #283146;
+      // =========== End:: Theme Colors ===========
+  }
+  // End:: Dark Theme Colors
+}
+// End:: Root Element
+
+// Start:: Fonts
+$light_font: "Poppins Light";
+$regular_font: "Poppins Regular";
+$medium_font: "Poppins Medium";
+$semi_bold_font: "Poppins SemiBold";
+$bold_font: "Poppins Bold";
+// End:: Fonts

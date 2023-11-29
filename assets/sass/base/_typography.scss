@@ -1,0 +1,26 @@
+// Start:: Define Font Faces
+@font-face {
+  font-family: $light_font;
+  src: url("~/assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: $regular_font;
+  src: url("~/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: $medium_font;
+  src: url("~/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: $semi_bold_font;
+  src: url("~/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: $bold_font;
+  src: url("~/assets/fonts/Poppins-Bold.ttf");
+}
+// Start:: Define Font Faces

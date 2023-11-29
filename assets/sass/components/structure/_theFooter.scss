@@ -1,0 +1,133 @@
+.footer_content_wrapper {
+  padding-top: 50px;
+  .logo_wrapper {
+    @include flexCenterAlignment;
+    img {
+      width: 140px;
+      height: auto;
+    }
+  }
+
+  .footer_routes_list {
+    width: 85%;
+    @include verticalFlexStartAlignment;
+    justify-content: space-between;
+    .footer_route {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      color: var(--main_theme_clr);
+      font-size: 20px;
+
+      button {
+        transition: color 0.4s linear ;
+        &:hover,
+        &.active {
+          color: var(--secondary_theme_clr);
+        }
+      }
+    }
+  }
+
+  .contact_info_list {
+    height: 100%;
+    @include verticalFlexStartAlignment;
+    gap: 30px;
+    // justify-content: space-between;
+
+    .contact_info_item {
+      @include flexStartAlignment;
+      span {
+        color: var(--main_theme_clr);
+      }
+      column-gap: 25px;
+      color: var(--main_theme_clr);
+      font-size: 20px;
+      .icon  {
+        svg, i {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .social_links_list {
+    height: 100%;
+    @include flexCenterAlignment;
+    flex-direction: column;
+    row-gap: 25px;
+    .social_links_item {
+      .icon  {
+        svg, i {
+          color: var(--main_theme_clr);
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .copyrights_contet {
+    margin-top: 50px;
+    padding-block: 30px;
+    background-color: #F8F9FC;
+    text-align: center;
+    h6 {
+      margin: 0;
+      color: var(--main_theme_clr);
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .footer_content_wrapper {
+    padding-top: 15px;
+    .logo_wrapper {
+      img {
+        width: 50%;
+      }
+    }
+
+    .footer_routes_list {
+      width: 80%;
+      flex-wrap: wrap;
+      .footer_route {
+        width: 50%;
+        font-size: 16px;
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .contact_info_list {
+      .contact_info_item {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+        column-gap: 15px;
+        font-size: 16px;
+        .icon  {
+          svg, i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .social_links_list {
+      margin-top: 25px !important;
+      @include flexCenterAlignment;
+      flex-direction: row;
+      column-gap: 35px;
+      .social_links_item {
+        .icon  {
+          svg, i {
+            color: var(--main_theme_clr);
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
