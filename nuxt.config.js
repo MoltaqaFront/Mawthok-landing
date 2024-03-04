@@ -153,16 +153,7 @@ export default {
   // },
   router: {
     mode: 'history',
-    base: '/',
-    extendRoutes(routes) {
-      routes.push({
-        path: '*',
-        redirect: '/',
-      }, {
-        path: '/en',
-        redirect: '/',
-      })
-    },
+    base: '/website'
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -187,13 +178,12 @@ export default {
   build: {
     postcss: false,
     transpile: ['vee-validate/dist/rules'],
-    publicPath: "https://.com/",
   },
 
 
-  // server: {
-  //   port: 5000,
-  // },
+  server: {
+    port: 5022,
+  },
   // env: {
   //   baseUrl: process.env.baseUrl || '',
   // },
