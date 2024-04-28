@@ -4,7 +4,7 @@
   overflow: hidden;
   .slider_image_wrapper {
     position: relative;
-    height: 100vh;
+    height: 900px;
     width: 100%;
     .slider_image {
       width: 100%;
@@ -90,6 +90,7 @@
           .slide_desc_content_wrapper {
             margin-block: 50px 20px;
             max-width: 100%;
+            width: 100%;
             .subtitle {
               margin: 0;
               font-size: 18px;

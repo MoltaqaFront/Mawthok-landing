@@ -93,20 +93,21 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: [{
-          name: 'عربي ',
-          code: 'ar',
-          iso: 'ar-AR',
-          file: 'ar-AR.js',
-          dir: 'rtl',
-        },
-        {
-          name: 'English',
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.js',
-          dir: 'ltr',
-        },
+        locales: [
+          {
+            name: 'عربي ',
+            code: 'ar',
+            iso: 'ar-AR',
+            file: 'ar-AR.js',
+            dir: 'rtl',
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js',
+            dir: 'ltr',
+          },
         ],
         lazy: true,
         langDir: 'locales/',
@@ -153,7 +154,7 @@ export default {
   // },
   router: {
     mode: 'history',
-    base: '/website'
+    base: '/',
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -179,7 +180,6 @@ export default {
     postcss: false,
     transpile: ['vee-validate/dist/rules'],
   },
-
 
   server: {
     port: 5022,
