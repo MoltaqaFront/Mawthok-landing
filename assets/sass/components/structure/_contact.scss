@@ -26,10 +26,8 @@
         .form-group {
           margin-bottom: 20px;
         }
-        input {
-        }
-
-        input {
+        input,
+        select {
           width: 100%;
           padding-inline-start: 20px;
           height: 45px;
@@ -42,7 +40,7 @@
         textarea {
           padding: 10px 16px;
           height: 79px;
-          background: #4a1e036b ;
+          background: #4a1e036b;
           border: none !important;
           outline: none;
           resize: none;

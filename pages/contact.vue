@@ -42,6 +42,17 @@
 
                       </ValidationProvider>
 
+                      <ValidationProvider rules="required" :name="$t('user.select_option')" v-slot="{ errors }">
+                        <div class="form-group">
+                          <select v-model="form.message_type">
+                            <option value="">{{ $t('user.select_option') }}</option>
+                            <option v-for="(option, index) in messageTypes" :key="'l' + index" :value="option.value">{{
+                              option.name }}
+                            </option>
+                          </select>
+                        </div>
+                      </ValidationProvider>
+
                       <ValidationProvider rules="required" :name="$t('contact.message')" v-slot="{ errors }">
                         <div class="form-group">
                           <textarea v-model="form.message" :placeholder="$t('contact.message')"></textarea>
@@ -101,19 +112,45 @@ export default {
         email: "",
         phone: "",
         message: "",
-        type: "contact"
+        message_type: ""
       },
 
 
     }
   },
 
-  created() {
-
-  },
-
-
   computed: {
+
+    messageTypes() {
+      return [
+        {
+          id: 1,
+          name: this.$t("STATUS.request"),
+          value: "Request",
+        },
+        {
+          id: 2,
+          name: this.$t("STATUS.suggestion"),
+          value: "Suggestion",
+        },
+        {
+          id: 3,
+          name: this.$t("STATUS.inquiry"),
+          value: "Inquiry",
+        },
+        {
+          id: 4,
+          name: this.$t("STATUS.complaint"),
+          value: "Complaint",
+        },
+        {
+          id: 5,
+          name: this.$t("STATUS.other"),
+          value: "Other",
+        }
+      ];
+    },
+
   },
 
   //  when component load
@@ -135,12 +172,13 @@ export default {
     async sendData() {
 
       try {
-        await this.$axios.$post('user/general/contact-complaints', this.form).then(response => {
+        await this.$axios.$post('contact-us/create', this.form).then(response => {
 
           this.form.name = '';
           this.form.email = '';
           this.form.phone = '';
           this.form.message = '';
+          this.form.message_type = '';
 
           this.$refs.observer.reset();
 
@@ -151,7 +189,7 @@ export default {
             type: 'success',
             text: `${response.message}`,
             showConfirmButton: false,
-            timer: 3000
+            timer: 2000
           })
 
           this.$router.push(this.localePath({ path: "/" }));
@@ -164,7 +202,7 @@ export default {
             type: 'error',
             text: `${error.response.data.message}`,
             showConfirmButton: false,
-            timer: 3000
+            timer: 2000
           })
 
           console.log(error)

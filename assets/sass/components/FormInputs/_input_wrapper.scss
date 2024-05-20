@@ -15,7 +15,8 @@
     height: 50px;
     margin-bottom: 2px;
     input,
-    textarea {
+    textarea,
+    select {
       // height: inherit;
       padding-block: 15px;
       padding-inline: 10px;
@@ -621,24 +622,24 @@
       }
     }
 
-		&.picker,
-		&.radio {
-			._input {
-				.v-input {
-					.v-input__control {
-						.v-input__slot {
-							.v-text-field__slot {
-								height: inherit;
-								label.v-label {
-									left: auto !important;
-									right: 15px !important;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+    &.picker,
+    &.radio {
+      ._input {
+        .v-input {
+          .v-input__control {
+            .v-input__slot {
+              .v-text-field__slot {
+                height: inherit;
+                label.v-label {
+                  left: auto !important;
+                  right: 15px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
     &.autoComplete {
       ._input {
