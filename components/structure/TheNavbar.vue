@@ -4,7 +4,7 @@
       <!-- Start:: Logo -->
       <div class="logo_wrapper">
         <nuxt-link :to="localePath('/')">
-          <img src="~/assets/media/logo/logo.png" width="100" height="auto" alt="Logo" />
+          <img src="~/assets/media/logo/logoo.png" width="100" height="auto" alt="Logo" />
         </nuxt-link>
       </div>
       <!-- End:: Logo -->

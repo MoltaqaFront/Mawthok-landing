@@ -4,7 +4,7 @@
       <div class="container-xl">
         <div class="row align-items-center justify-content-between">
           <!-- Start:: Section Text -->
-          <div class="col-lg-6" data-aos-once="true" :data-aos="$i18n.locale == 'ar' ? 'fade-left' : 'fade-right'" data-aos-delay="500" data-aos-duration="1000">
+          <div class="col-lg-12" data-aos-once="true" :data-aos="$i18n.locale == 'ar' ? 'fade-left' : 'fade-right'" data-aos-delay="500" data-aos-duration="1000">
             <div class="section_text_wrapper">
               <h2 class="section_title">
                 {{ $t("nav.download") }}
@@ -40,7 +40,7 @@
           <!-- End:: Section Text -->
 
           <!-- Start:: Section Image -->
-          <div class="col-lg-5">
+          <!-- <div class="col-lg-5">
             <div class="section_image_wrapper">
               <img
                 class="logo"
@@ -60,7 +60,7 @@
                 loading="lazy"
               />
             </div>
-          </div>
+          </div> -->
           <!-- End:: Section Image -->
         </div>
       </div>
@@ -85,6 +85,7 @@ export default {
       color: var(--white_clr);
       font-size: 38px;
       font-weight: 700;
+      text-align: center;
     }
     .section_desc {
       margin-block: 30px;
@@ -93,11 +94,11 @@ export default {
       font-size: 16px;
       color: var(--white_clr);
       line-height: 1.6;
-      text-align: start;
+      text-align: center;
     }
     .download_btns_wrapper {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       column-gap: 15px;
       a {
