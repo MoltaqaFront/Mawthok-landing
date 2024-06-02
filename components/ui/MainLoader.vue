@@ -2,7 +2,7 @@
   <div class="main_loader_wrapper">
     <img
       class="logo"
-      src="~/assets/media/logo/logo1.png"
+      src="~/assets/media/logo/logo.png"
       width="200"
       height="200"
       alt="Logo"

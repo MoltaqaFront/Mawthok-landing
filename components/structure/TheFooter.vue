@@ -5,7 +5,7 @@
         <!-- Start:: Logo Wrapper -->
         <div class="col-lg-3 col-xl-2 my-3">
           <div class="logo_wrapper focus_screen">
-            <img src="~/assets/media/logo/logo1.png" width="120" height="120" alt="Logo" />
+            <img src="~/assets/media/logo/logo.png" width="120" height="120" alt="Logo" />
           </div>
         </div>
         <!-- End:: Logo Wrapper -->

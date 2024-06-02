@@ -14,7 +14,7 @@
       <!-- Start:: Section Text -->
       <div class="col-md-6">
         <div class="logo_wrapper">
-          <img src="~/assets/media/logo/logo1.png" alt="Logo" width="180" height="180" data-aos-once="false"
+          <img src="~/assets/media/logo/logo.png" alt="Logo" width="180" height="180" data-aos-once="false"
             data-aos="fade" data-aos-delay="500" data-aos-duration="1000" loading="lazy" />
         </div>
 
